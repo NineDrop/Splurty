@@ -80,3 +80,24 @@ h2{
 .about{
   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;  
 }
+
+.modal{
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;  
+
+}
+
+.h2 span{
+  color: #dddddd;
+  font-family: 'quicksandregular';
+  font-weight: bold;
+}
+
+::selection{
+  background-color: #820A0A;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb{
+    text-align:left;
+  }
+}

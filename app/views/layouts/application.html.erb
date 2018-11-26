@@ -23,11 +23,12 @@
           </div>
         <% end %>
       </div>
-      <div class="col-4 slogan">
+      <div class="col col-sm-4 d-none d-sm-block slogan">
         Splurting out unnecessary Dota quotes since 2018
       </div>
-      <div class="col-5 links">
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
         <%= link_to 'Contribute', '#', data: {toggle: 'modal' , target: '#myModal'} %>
+        &nbsp;&nbsp;
         <%= link_to 'About', about_path %>
       </div>
     </header>
@@ -44,8 +45,9 @@
           </div>
           <%= simple_form_for Quote.new do |f| %>
           <div class="modal-body">
-              <%= f.input :saying %>
-              <%= f.input :author %>
+              <%= f.input :saying, label:"What Dota quote would you like to add?", placeholder: "Who's that handsome devil?" %>
+              <br />
+              <%= f.input :author, label:"Who said this?", placeholder: "Raijin the Storm Spirit" %>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -72,10 +74,10 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <%= link_to "I NEED MORE DOTA", root_path, class: 'next-quote' %>
           </div>
-          <div class="col-6 footer-blurb">
+          <div class="col-12 col-sm-6 footer-blurb">
             Proudly hacked and cobbled together by <a href="https://sad-aryabhata-d955b7.netlify.com/">Jonathan Stone</a><br />
             Want to build your own webapp? - <a href="https://online.bootcampspot.com"> Learn how to code here</a>
           </div>
